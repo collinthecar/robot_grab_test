@@ -24,11 +24,13 @@ void setup() {
   servo_ArmMotor.attach(ci_Arm_Motor);
   pinMode(ci_Grip_Motor, OUTPUT);
   servo_GripMotor.attach(ci_Grip_Motor);
+  servo_ArmMotor.write(ci_Arm_Servo_Extended);
+  servo_GripMotor.write(ci_Grip_Motor_Open);
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
-
+  Ping();
 }
 void Ping()
 {
